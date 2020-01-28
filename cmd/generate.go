@@ -33,7 +33,7 @@ var generateCmd = &cobra.Command{
 		//fmt.Println("generate called", args)
 		gen.Start(gen.Inputs{
 			TemplatePath: args[0],
-			ValuesPath:   args[1],
+			ValuesPath:   cmd.Flag("values").Value.String(),
 			OutputPath:   cmd.Flag("output").Value.String(),
 		})
 	},
