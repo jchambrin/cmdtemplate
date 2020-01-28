@@ -37,8 +37,6 @@ func Start(inputs Inputs) {
 			log.Fatal(err)
 		}
 	}
-
-
 }
 
 func readFile(filePath string) map[string]string {
